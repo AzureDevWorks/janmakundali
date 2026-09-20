@@ -299,18 +299,7 @@ The app preserves the **IANA timezone** identifier and resolves the **UTC offset
 
 ---
 
-## Roadmap
 
-- [ ] Backend with Supabase for multi-device profile sync
-- [ ] Web Worker for the transit-calendar scanning computation
-- [ ] PDF export of the full chart + report
-- [ ] Print-friendly layout
-- [ ] Dark mode toggle
-- [ ] Hindi / Sanskrit UI localization
-- [ ] Share links (read-only URL to view someone's chart)
-- [ ] Additional dasha systems (Ashtottari, Yogini, Chara, Narayan)
-
----
 
 ## Contributing
 
