@@ -1,4 +1,4 @@
-# Dependencies
+﻿# Dependencies
 node_modules/
 .pnp
 .pnp.js
@@ -53,3 +53,7 @@ coverage/
 scripts/*.local.*
 *-keys.txt
 output.txt
+_ai_project_snapshot/
+core_scan.txt
+project_scan.txt
+
