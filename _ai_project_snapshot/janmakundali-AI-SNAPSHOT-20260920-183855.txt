@@ -1,0 +1,515 @@
+﻿====================================================================
+janmakundali
+AI DEVELOPMENT PROJECT SNAPSHOT
+====================================================================
+
+Generated:
+20260920-183855
+
+Project Root:
+D:\Development\Astrogyan\janmakundali
+
+Purpose:
+This file is an AI-readable snapshot of the React + TypeScript
+application.
+
+IMPORTANT:
+This snapshot is generated from the actual project files.
+It should be treated as the current source of truth when continuing
+development in another AI conversation.
+
+====================================================================
+
+
+================================================================================
+1. PROJECT INFORMATION
+================================================================================
+Project Name : janmakundali
+Project Root : D:\Development\Astrogyan\janmakundali
+Generated    : 20260920-183855
+OS           : Microsoft Windows NT 10.0.22621.0
+PowerShell   : 5.1.22621.4249
+Node.js      : v24.20.0
+npm          : 11.6.0
+
+
+================================================================================
+2. PACKAGE.JSON
+================================================================================
+FILE: package.json
+
+{
+  "name": "janmakundali",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@prisri/jyotish": "^1.1.7",
+    "@supabase/supabase-js": "^2.116.0",
+    "@tanstack/react-query": "^5.59.0",
+    "clsx": "^2.1.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^2.5.4",
+    "zustand": "^5.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/node": "^22.7.5",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.3",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.0"
+  }
+}
+
+
+
+================================================================================
+3. PACKAGE LOCK
+================================================================================
+package-lock.json exists.
+Size: 89068 bytes
+Lockfile contents intentionally omitted.
+
+
+================================================================================
+4. PROJECT DIRECTORY TREE
+================================================================================
+Project tree excluding node_modules, git, build output and snapshot:
+
+[FILE] .env.example (418 bytes)
+[FILE] .env.local (128 bytes)
+[FILE] .gitignore (581 bytes)
+[FILE] components.json (514 bytes)
+[FILE] core_scan.txt (46424 bytes)
+[DIR ] docs
+[FILE] docs\panchang-ts-reference.md (36343 bytes)
+[FILE] docs\prisri-jyotish-reference.md (25733 bytes)
+[FILE] docs\special-lagnas-sources.md (1362 bytes)
+[FILE] eslint.config.js (840 bytes)
+[FILE] gochar-keys.txt (37436 bytes)
+[FILE] index.html (358 bytes)
+[FILE] package.json (740 bytes)
+[FILE] package-lock.json (89068 bytes)
+[FILE] predictions-keys.txt (85176 bytes)
+[FILE] project_scan.txt (669521 bytes)
+[DIR ] public
+[FILE] public\.gitkeep (0 bytes)
+[FILE] README.md (1737 bytes)
+[DIR ] scripts
+[FILE] scripts\inspect-gochar.mjs (8391 bytes)
+[FILE] scripts\inspect-predictions.mjs (5906 bytes)
+[FILE] scripts\test-panchang.mjs (1915 bytes)
+[DIR ] src
+[FILE] src\App.tsx (3734 bytes)
+[DIR ] src\components
+[FILE] src\components\BirthForm.tsx (8261 bytes)
+[DIR ] src\components\cards
+[FILE] src\components\cards\ArudhaPadasCard.tsx (1441 bytes)
+[FILE] src\components\cards\AshtakavargaCard.tsx (3636 bytes)
+[FILE] src\components\cards\BirthDetailsCard.tsx (1288 bytes)
+[FILE] src\components\cards\ChalitCard.tsx (2195 bytes)
+[FILE] src\components\cards\ComprehensiveReportCard.tsx (5462 bytes)
+[FILE] src\components\cards\DashaCard.tsx (3499 bytes)
+[FILE] src\components\cards\DashaTimeline.tsx (14887 bytes)
+[FILE] src\components\cards\DrishtiCard.tsx (4429 bytes)
+[FILE] src\components\cards\HouseTable.tsx (5363 bytes)
+[FILE] src\components\cards\KpCard.tsx (2144 bytes)
+[FILE] src\components\cards\KpSignificatorsCard.tsx (1425 bytes)
+[FILE] src\components\cards\LagnaCard.tsx (1516 bytes)
+[FILE] src\components\cards\LalKitabCard.tsx (1590 bytes)
+[FILE] src\components\cards\PanchangCard.tsx (3086 bytes)
+[FILE] src\components\cards\PlanetTable.tsx (4220 bytes)
+[FILE] src\components\cards\PredictionCards.tsx (12022 bytes)
+[DIR ] src\components\charts
+[FILE] src\components\charts\ChartPanel.tsx (5663 bytes)
+[FILE] src\components\charts\ChartSection.tsx (3348 bytes)
+[FILE] src\components\charts\ModernNorthChart.tsx (6528 bytes)
+[FILE] src\components\charts\ModernSouthChart.tsx (4879 bytes)
+[FILE] src\components\charts\NorthChart.tsx (2751 bytes)
+[FILE] src\components\charts\NorthIndianChart.tsx (5686 bytes)
+[FILE] src\components\charts\PlanetChip.tsx (1607 bytes)
+[FILE] src\components\charts\PlanetLegend.tsx (5670 bytes)
+[FILE] src\components\charts\PlanetLegendPanel.tsx (2755 bytes)
+[FILE] src\components\charts\SouthChart.tsx (3061 bytes)
+[FILE] src\components\charts\SouthIndianChart.tsx (4570 bytes)
+[DIR ] src\components\dashas
+[FILE] src\components\dashas\VimshottariDasha.tsx (16102 bytes)
+[FILE] src\components\ErrorBoundary.tsx (2822 bytes)
+[DIR ] src\components\events
+[FILE] src\components\events\UpcomingEventsCard.tsx (6936 bytes)
+[DIR ] src\components\gochar
+[FILE] src\components\gochar\GocharAdvice.tsx (902 bytes)
+[FILE] src\components\gochar\GocharHero.tsx (4747 bytes)
+[FILE] src\components\gochar\LifeAreasGrid.tsx (4183 bytes)
+[FILE] src\components\gochar\PlanetTransitTable.tsx (5802 bytes)
+[FILE] src\components\gochar\SpecialTransitCards.tsx (7231 bytes)
+[DIR ] src\components\layout
+[FILE] src\components\layout\IdentityCard.tsx (3085 bytes)
+[FILE] src\components\layout\MobileNav.tsx (1261 bytes)
+[FILE] src\components\layout\navConfig.ts (2649 bytes)
+[FILE] src\components\layout\SidebarNav.tsx (2905 bytes)
+[DIR ] src\components\location
+[FILE] src\components\location\LocationPicker.tsx (6408 bytes)
+[DIR ] src\components\overview
+[FILE] src\components\overview\BirthSnapshotCard.tsx (1483 bytes)
+[FILE] src\components\overview\DashaCard.tsx (5231 bytes)
+[FILE] src\components\overview\ExploreGrid.tsx (2141 bytes)
+[FILE] src\components\overview\IdentityHero.tsx (4835 bytes)
+[FILE] src\components\overview\JanmaNakshatraCard.tsx (5262 bytes)
+[FILE] src\components\overview\KeyMarkersGrid.tsx (4983 bytes)
+[FILE] src\components\overview\PanchangCard.tsx (4138 bytes)
+[FILE] src\components\overview\RunningNowBanner.tsx (5612 bytes)
+[FILE] src\components\overview\SpecialLagnasCard.tsx (7044 bytes)
+[FILE] src\components\overview\TopInsightsCard.tsx (4247 bytes)
+[FILE] src\components\overview\WelcomeBanner.tsx (1632 bytes)
+[DIR ] src\components\panchang
+[FILE] src\components\panchang\ChoghadiyaCard.tsx (3580 bytes)
+[FILE] src\components\panchang\HoraCard.tsx (3421 bytes)
+[FILE] src\components\panchang\InauspiciousCard.tsx (2901 bytes)
+[FILE] src\components\panchang\MuhurtaCard.tsx (3328 bytes)
+[FILE] src\components\panchang\PanchangHero.tsx (3226 bytes)
+[FILE] src\components\panchang\SunMoonCard.tsx (3076 bytes)
+[DIR ] src\components\predictions
+[FILE] src\components\predictions\FieldList.tsx (9759 bytes)
+[FILE] src\components\predictions\fieldTypes.ts (1706 bytes)
+[DIR ] src\components\profiles
+[FILE] src\components\profiles\ProfilesList.tsx (4555 bytes)
+[DIR ] src\components\reference
+[FILE] src\components\reference\ChandraSuryaSection.tsx (3709 bytes)
+[FILE] src\components\reference\ReferenceChartPanel.tsx (7159 bytes)
+[FILE] src\components\reference\referenceMeta.ts (1703 bytes)
+[DIR ] src\components\ui
+[FILE] src\components\ui\Badge.tsx (376 bytes)
+[FILE] src\components\ui\Card.tsx (1868 bytes)
+[FILE] src\components\ui\Stat.tsx (388 bytes)
+[DIR ] src\features
+[DIR ] src\features\auth
+[FILE] src\features\auth\AuthModal.tsx (6211 bytes)
+[FILE] src\features\auth\useAuth.ts (2169 bytes)
+[FILE] src\features\auth\useGuestMode.ts (847 bytes)
+[FILE] src\features\auth\UserMenu.tsx (1425 bytes)
+[DIR ] src\features\birth
+[FILE] src\features\birth\birthStore.ts (1592 bytes)
+[FILE] src\features\birth\usePlaceSearch.ts (1856 bytes)
+[DIR ] src\features\events
+[FILE] src\features\events\events.ts (7792 bytes)
+[FILE] src\features\events\useUpcomingEvents.ts (1937 bytes)
+[DIR ] src\features\kundli
+[FILE] src\features\kundli\useGochar.ts (626 bytes)
+[FILE] src\features\kundli\useKundli.ts (1098 bytes)
+[FILE] src\features\kundli\usePanchangam.ts (626 bytes)
+[FILE] src\features\kundli\useTodayPanchangam.ts (835 bytes)
+[DIR ] src\features\location
+[FILE] src\features\location\useCurrentLocation.ts (6755 bytes)
+[DIR ] src\features\predictions
+[FILE] src\features\predictions\useAllPredictions.ts (972 bytes)
+[DIR ] src\features\profiles
+[FILE] src\features\profiles\ProfileDropdown.tsx (4128 bytes)
+[FILE] src\features\profiles\ProfileModal.tsx (3732 bytes)
+[FILE] src\features\profiles\profiles.types.ts (1482 bytes)
+[FILE] src\features\profiles\profilesApi.ts (1900 bytes)
+[FILE] src\features\profiles\profileUI.store.ts (571 bytes)
+[FILE] src\features\profiles\useProfiles.ts (1258 bytes)
+[FILE] src\features\profiles\WelcomeScreen.tsx (2991 bytes)
+[FILE] src\index.css (14965 bytes)
+[DIR ] src\lib
+[FILE] src\lib\astro.ts (5887 bytes)
+[FILE] src\lib\geocoding.ts (2185 bytes)
+[FILE] src\lib\nakshatraSources.ts (4255 bytes)
+[FILE] src\lib\specialLagnasSources.ts (7695 bytes)
+[FILE] src\lib\supabase.ts (533 bytes)
+[FILE] src\lib\text.ts (3652 bytes)
+[FILE] src\lib\utils.ts (165 bytes)
+[FILE] src\main.tsx (639 bytes)
+[DIR ] src\theme
+[FILE] src\theme\index.ts (24 bytes)
+[FILE] src\theme\README.md (0 bytes)
+[FILE] src\theme\theme.ts (12244 bytes)
+[DIR ] src\views
+[FILE] src\views\HomeView.tsx (4550 bytes)
+[FILE] src\views\LandingView.tsx (7141 bytes)
+[DIR ] src\views\tabs
+[FILE] src\views\tabs\AshtakavargaTab.tsx (258 bytes)
+[FILE] src\views\tabs\ChalitTab.tsx (417 bytes)
+[FILE] src\views\tabs\ChartsTab.tsx (440 bytes)
+[FILE] src\views\tabs\DashasTab.tsx (308 bytes)
+[FILE] src\views\tabs\GocharTab.tsx (2362 bytes)
+[FILE] src\views\tabs\KpTab.tsx (397 bytes)
+[FILE] src\views\tabs\OverviewTab.tsx (1830 bytes)
+[FILE] src\views\tabs\PanchangTab.tsx (5878 bytes)
+[FILE] src\views\tabs\PlanetsTab.tsx (557 bytes)
+[FILE] src\views\tabs\PredictionsTab.tsx (873 bytes)
+[FILE] src\views\tabs\ReportTab.tsx (273 bytes)
+[FILE] src\views\tabs\TransitCalendarTab.tsx (206 bytes)
+[FILE] src\vite-env.d.ts (206 bytes)
+[FILE] tsconfig.app.json (699 bytes)
+[FILE] tsconfig.json (502 bytes)
+[FILE] tsconfig.node.json (518 bytes)
+[FILE] vite.config.ts (318 bytes)
+
+
+================================================================================
+5. PROJECT CONFIGURATION FILES
+================================================================================
+
+
+--------------------------------------------------------------------
+FILE: vite.config.ts
+--------------------------------------------------------------------
+
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
+import { fileURLToPath } from 'node:url';
+
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+  resolve: { alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) } },
+});
+
+
+--------------------------------------------------------------------
+FILE: tsconfig.json
+--------------------------------------------------------------------
+
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "paths": { "@/*": ["./src/*"] },
+    "types": ["vite/client"]
+  },
+  "include": ["src"]
+}
+
+
+--------------------------------------------------------------------
+FILE: tsconfig.app.json
+--------------------------------------------------------------------
+
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "es2023",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "esnext",
+    "types": ["vite/client"],
+    "allowArbitraryExtensions": true,
+    "skipLibCheck": true,
+
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src"]
+}
+
+
+--------------------------------------------------------------------
+FILE: tsconfig.node.json
+--------------------------------------------------------------------
+
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "target": "es2023",
+    "lib": ["ES2023"],
+    "types": ["node"],
+    "skipLibCheck": true,
+
+    "module": "nodenext",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["vite.config.ts"]
+}
+
+
+--------------------------------------------------------------------
+FILE: eslint.config.js
+--------------------------------------------------------------------
+
+import js from '@eslint/js';
+import globals from 'globals';
+import reactHooks from 'eslint-plugin-react-hooks';
+import reactRefresh from 'eslint-plugin-react-refresh';
+import tseslint from 'typescript-eslint';
+
+export default tseslint.config(
+  { ignores: ['dist'] },
+  {
+    extends: [js.configs.recommended, ...tseslint.configs.recommended],
+    files: ['**/*.{ts,tsx}'],
+    languageOptions: {
+      ecmaVersion: 2022,
+      globals: globals.browser,
+    },
+    plugins: {
+      'react-hooks': reactHooks,
+      'react-refresh': reactRefresh,
+    },
+    rules: {
+      ...reactHooks.configs.recommended.rules,
+      'react-refresh/only-export-components': [
+        'warn',
+        { allowConstantExport: true },
+      ],
+      '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
+    },
+  },
+);
+
+
+--------------------------------------------------------------------
+FILE: index.html
+--------------------------------------------------------------------
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:," />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Janma Kundali Â· Vedic Birth Chart</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
+
+================================================================================
+6. SOURCE CODE — SRC
+================================================================================
+
+
+================================================================================
+7. PUBLIC DIRECTORY
+================================================================================
+[FILE] public\.gitkeep (0 bytes)
+
+
+================================================================================
+8. ENVIRONMENT VARIABLES
+================================================================================
+
+FILE: .env.local
+
+VITE_SUPABASE_URL=[REDACTED]
+VITE_SUPABASE_ANON_KEY=[REDACTED]
+
+
+================================================================================
+9. GIT STATUS
+================================================================================
+Git repository: YES
+
+Current branch:
+main
+
+Git status:
+ M package-lock.json
+ M package.json
+ M src/App.tsx
+ M src/components/BirthForm.tsx
+ M src/components/layout/SidebarNav.tsx
+ M src/features/birth/birthStore.ts
+ M src/main.tsx
+ M src/views/HomeView.tsx
+ M src/views/tabs/OverviewTab.tsx
+?? .env.example
+?? _ai_project_snapshot/
+?? core_scan.txt
+?? project_scan.txt
+?? src/components/ErrorBoundary.tsx
+?? src/components/overview/ExploreGrid.tsx
+?? src/components/overview/KeyMarkersGrid.tsx
+?? src/components/overview/RunningNowBanner.tsx
+?? src/components/overview/TopInsightsCard.tsx
+?? src/components/overview/WelcomeBanner.tsx
+?? src/components/profiles/
+?? src/features/auth/
+?? src/features/profiles/
+?? src/lib/supabase.ts
+?? src/views/LandingView.tsx
+?? src/vite-env.d.ts
+
+
+================================================================================
+10. SOURCE STATISTICS
+================================================================================
+Total src files : 116
+TypeScript      : 114
+JavaScript      : 0
+CSS             : 1
+Approx. lines   : 11579
+
+
+================================================================================
+11. AI CONTINUATION INSTRUCTIONS
+================================================================================
+This project snapshot represents the state of the application when
+the export was generated.
+
+When continuing development:
+
+1. Treat the source code in this snapshot as authoritative.
+2. Do not invent files that are not present.
+3. Do not assume a library is installed unless package.json confirms it.
+4. Preserve the existing architecture unless there is a concrete reason
+   to change it.
+5. Before modifying a component, inspect its imports and consumers.
+6. Preserve existing TypeScript types.
+7. Do not expose or recreate values from .env files.
+8. If a requested feature conflicts with the existing architecture,
+   explain the conflict before changing the architecture.
+9. When giving implementation changes, provide complete PowerShell
+   scripts that create/update the required files.
+10. Do not tell the developer to manually paste code into individual
+    files when a PowerShell implementation script can perform the change.
+
+====================================================================
+END OF SNAPSHOT
+====================================================================

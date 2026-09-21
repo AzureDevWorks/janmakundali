@@ -21,17 +21,37 @@ export interface BirthProfile {
 
 interface State {
   profile: BirthProfile | null;
+  /** Supabase row id when the current profile is a saved one, else null. */
+  currentProfileId: string | null;
+
   setProfile: (p: BirthProfile) => void;
+  setProfileWithId: (id: string, p: BirthProfile) => void;
+  setCurrentProfileId: (id: string | null) => void;
+
   reset: () => void;
+  resetProfile: () => void;
 }
 
 export const useBirthStore = create<State>()(
   persist(
     (set) => ({
       profile: null,
-      setProfile: (p) => set({ profile: p }),
-      reset: () => set({ profile: null }),
+      currentProfileId: null,
+
+      setProfile: (p) => set({ profile: p, currentProfileId: null }),
+      setProfileWithId: (id, p) => set({ profile: p, currentProfileId: id }),
+      setCurrentProfileId: (id) => set({ currentProfileId: id }),
+
+      reset: () => set({ profile: null, currentProfileId: null }),
+      resetProfile: () => set({ profile: null, currentProfileId: null }),
     }),
-    { name: 'janmakundali:profile', storage: createJSONStorage(() => localStorage) },
+    {
+      name: 'janmakundali:profile',
+      storage: createJSONStorage(() => localStorage),
+      partialize: (s) => ({
+        profile: s.profile,
+        currentProfileId: s.currentProfileId,
+      } as any),
+    },
   ),
 );
